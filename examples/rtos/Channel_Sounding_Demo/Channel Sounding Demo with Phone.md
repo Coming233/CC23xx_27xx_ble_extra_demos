@@ -19,8 +19,12 @@
 
 # 结果
 
-使用串口工具，打开CC2745对应的串口，波特率为921600.
+使用串口工具，打开CC2745对应的串口，波特率为115200.
 
 会看到下方结果
 
 ![img_v3_0213b_76254c2f-96b7-487f-a17f-a1640c0527ag.jpg](70d6b7bc7503258de2ecb0be00f31273.jpg)
+
+## 注意：
+1. 当前demo的模式是： 手机为`Central + Reflector`，CC2745 Launchpad为`Peripheral + Initiator`
+2. Demo默认使用的为单天线进行测距。可以在app_car_node.c的`csProcedureParams`结构体变量进行修改。具体修改的定义请参考[https://software-dl.ti.com/simplelink/esd/simplelink_lowpower_f3_sdk/9.20.00.81/exports/docs/ble5stack/ble_user_guide/html/channel-sounding/channel-sounding.html](https://)
