@@ -146,7 +146,7 @@ typedef struct {
     uint32_t distance;    //!< Estimated distance in centimeters.
     uint32_t quality;     //!< Average quality of the ranging measurement.
     uint32_t confidence;  //!< Confidence level of the distance estimation.
-    uint32_t velocity;    //!< Estimated velocity (meters/second) used in motion compensation.
+    int32_t velocity;    //!< Estimated velocity (meters/second) used in motion compensation.
 #ifdef CS_PROCESS_EXT_RESULTS
     CSProcess_ExtendedResults_t* extendedResults;   //!< Extended Results
 #endif
